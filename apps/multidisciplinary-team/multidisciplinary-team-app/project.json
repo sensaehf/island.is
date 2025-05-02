@@ -1,0 +1,80 @@
+{
+  "name": "multidisciplinary-team-app",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/multidisciplinary-team/multidisciplinary-team-app/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/multidisciplinary-team/multidisciplinary-team-app",
+        "index": "apps/multidisciplinary-team/multidisciplinary-team-app/src/index.html",
+        "baseHref": "/",
+        "main": "apps/multidisciplinary-team/multidisciplinary-team-app/src/main.tsx",
+        "tsConfig": "apps/multidisciplinary-team/multidisciplinary-team-app/tsconfig.app.json",
+        "assets": [
+          "apps/multidisciplinary-team/multidisciplinary-team-app/src/favicon.ico",
+          "apps/multidisciplinary-team/multidisciplinary-team-app/src/assets"
+        ],
+        "styles": [
+          "apps/multidisciplinary-team/multidisciplinary-team-app/src/styles.scss"
+        ],
+        "scripts": [],
+        "webpackConfig": "apps/multidisciplinary-team/multidisciplinary-team-app/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/multidisciplinary-team/multidisciplinary-team-app/src/environments/environment.ts",
+              "with": "apps/multidisciplinary-team/multidisciplinary-team-app/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "multidisciplinary-team-app:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "multidisciplinary-team-app:build:development"
+        },
+        "production": {
+          "buildTarget": "multidisciplinary-team-app:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/multidisciplinary-team/multidisciplinary-team-app/jest.config.ts"
+      }
+    }
+  }
+}
