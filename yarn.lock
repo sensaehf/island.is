@@ -15054,19 +15054,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/sequelize@npm:10.0.0":
-  version: 10.0.0
-  resolution: "@nestjs/sequelize@npm:10.0.0"
-  dependencies:
-    uuid: "npm:9.0.0"
+"@nestjs/sequelize@npm:11.0.0":
+  version: 11.0.0
+  resolution: "@nestjs/sequelize@npm:11.0.0"
   peerDependencies:
-    "@nestjs/common": ^8.0.0 || ^9.0.0 || ^10.0.0
-    "@nestjs/core": ^8.0.0 || ^9.0.0 || ^10.0.0
-    reflect-metadata: ^0.1.13
+    "@nestjs/common": ^10.0.0 || ^11.0.0
+    "@nestjs/core": ^10.0.0 || ^11.0.0
+    reflect-metadata: ^0.1.13 || ^0.2.0
     rxjs: ^7.2.0
     sequelize: ^6.3.5
     sequelize-typescript: ^2.0.0
-  checksum: 10/05d46393a9a3fc449db9570e4517d840e425b9900e1815cdd3c687a3945fb0e21abae48340dbed5d1d15a096980db71a1bcdca40f49fdef7cfa0def83e68546b
+  checksum: 10/0fe949e70082875b38ff2ca4fed36eefb22e647df5ba6a97228e49b366a84a61a9c4c3243ad8e60391461ee399b4cfc908e0948a8b728d5d1880f52decf0166f
   languageName: node
   linkType: hard
 
@@ -16420,6 +16418,13 @@ __metadata:
   dependencies:
     "@octokit/openapi-types": "npm:^23.0.1"
   checksum: 10/7f260cd3f98887626e791cc0e71ae718b689f359ff6546ed0343364bb213c70807f71135956659470ecdf2b4a5a0c32b6437bd5a3af412883ef3a62f41e811f8
+  languageName: node
+  linkType: hard
+
+"@one-ini/wasm@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@one-ini/wasm@npm:0.1.1"
+  checksum: 10/673c11518dba2e582e42415cbefe928513616f3af25e12f6e4e6b1b98b52b3e6c14bc251a361654af63cd64f208f22a1f7556fa49da2bf7efcf28cb14f16f807
   languageName: node
   linkType: hard
 
@@ -28762,7 +28767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cli-color@npm:^2.0.0, cli-color@npm:^2.0.1":
+"cli-color@npm:^2.0.0":
   version: 2.0.2
   resolution: "cli-color@npm:2.0.2"
   dependencies:
@@ -28772,6 +28777,19 @@ __metadata:
     memoizee: "npm:^0.4.15"
     timers-ext: "npm:^0.1.7"
   checksum: 10/92f11993324a0250f66c31a67043a0c8b6d736f23dadaf5e4614c1550d012a28983828d80daec9a71282e2a4593a98da402bdf7946d4123b3e80dbb275e7cf7f
+  languageName: node
+  linkType: hard
+
+"cli-color@npm:^2.0.3":
+  version: 2.0.4
+  resolution: "cli-color@npm:2.0.4"
+  dependencies:
+    d: "npm:^1.0.1"
+    es5-ext: "npm:^0.10.64"
+    es6-iterator: "npm:^2.0.3"
+    memoizee: "npm:^0.4.15"
+    timers-ext: "npm:^0.1.7"
+  checksum: 10/6706fbb98f5db62c47deaba7116a1e37470c936dc861b84a180b5ce1a58fbf50ae6582b30a65e4b30ddb39e0469d3bac6851a9d925ded02b7e0c1c00858ef14b
   languageName: node
   linkType: hard
 
@@ -29239,6 +29257,13 @@ __metadata:
   version: 1.2.9
   resolution: "command-exists@npm:1.2.9"
   checksum: 10/46fb3c4d626ca5a9d274f8fe241230817496abc34d12911505370b7411999e183c11adff7078dd8a03ec4cf1391290facda40c6a4faac8203ae38c985eaedd63
+  languageName: node
+  linkType: hard
+
+"commander@npm:^10.0.0":
+  version: 10.0.1
+  resolution: "commander@npm:10.0.1"
+  checksum: 10/8799faa84a30da985802e661cc9856adfaee324d4b138413013ef7f087e8d7924b144c30a1f1405475f0909f467665cd9e1ce13270a2f41b141dab0b7a58f3fb
   languageName: node
   linkType: hard
 
@@ -32420,17 +32445,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"editorconfig@npm:^0.15.3":
-  version: 0.15.3
-  resolution: "editorconfig@npm:0.15.3"
+"editorconfig@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "editorconfig@npm:1.0.4"
   dependencies:
-    commander: "npm:^2.19.0"
-    lru-cache: "npm:^4.1.5"
-    semver: "npm:^5.6.0"
-    sigmund: "npm:^1.0.1"
+    "@one-ini/wasm": "npm:0.1.1"
+    commander: "npm:^10.0.0"
+    minimatch: "npm:9.0.1"
+    semver: "npm:^7.5.3"
   bin:
     editorconfig: bin/editorconfig
-  checksum: 10/d82b32cc4e8f5a873b868aedd07056d62afb00c1453a3214bcef7799ff045c4c13146731c7648e5b8397b9efc71c1896733ad97a211d05cc8933364273321295
+  checksum: 10/bd0a7236f31a7f54801cb6f3222508d4f872a24e440bef30ee29f4ba667c0741724e52e0ad521abe3409b12cdafd8384bb751de9b2a2ee5f845c740edd2e742f
   languageName: node
   linkType: hard
 
@@ -33095,6 +33120,18 @@ __metadata:
     es6-symbol: "npm:^3.1.3"
     next-tick: "npm:^1.1.0"
   checksum: 10/319f34eef461a008d1c33e29822132c0a9308fe9508f435d12dfefaa981eb5eb0acd0eff6d73c1b176e225fc54adb1a13264543cd6d2116679d2412e8879bae2
+  languageName: node
+  linkType: hard
+
+"es5-ext@npm:^0.10.62, es5-ext@npm:^0.10.64":
+  version: 0.10.64
+  resolution: "es5-ext@npm:0.10.64"
+  dependencies:
+    es6-iterator: "npm:^2.0.3"
+    es6-symbol: "npm:^3.1.3"
+    esniff: "npm:^2.0.1"
+    next-tick: "npm:^1.1.0"
+  checksum: 10/0c5d8657708b1695ddc4b06f4e0b9fbdda4d2fe46d037b6bedb49a7d1931e542ec9eecf4824d59e1d357e93229deab014bb4b86485db2d41b1d68e54439689ce
   languageName: node
   linkType: hard
 
@@ -34057,6 +34094,18 @@ __metadata:
   bin:
     eslint: bin/eslint.js
   checksum: 10/00496e218b23747a7a9817bf58b522276d0dc1f2e546dceb4eea49f9871574088f72f1f069a6b560ef537efa3a75261b8ef70e51ef19033da1cc4c86a755ef15
+  languageName: node
+  linkType: hard
+
+"esniff@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "esniff@npm:2.0.1"
+  dependencies:
+    d: "npm:^1.0.1"
+    es5-ext: "npm:^0.10.62"
+    event-emitter: "npm:^0.3.5"
+    type: "npm:^2.7.2"
+  checksum: 10/f6a2abd2f8c5fe57c5fcf53e5407c278023313d0f6c3a92688e7122ab9ac233029fd424508a196ae5bc561aa1f67d23f4e2435b1a0d378030f476596129056ac
   languageName: node
   linkType: hard
 
@@ -36503,7 +36552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.3.7":
+"glob@npm:^10.3.7, glob@npm:^10.4.2":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -39620,7 +39669,7 @@ __metadata:
     "@nestjs/passport": "npm:8.2.2"
     "@nestjs/platform-express": "npm:10.0.5"
     "@nestjs/schematics": "npm:10.0.1"
-    "@nestjs/sequelize": "npm:10.0.0"
+    "@nestjs/sequelize": "npm:11.0.0"
     "@nestjs/swagger": "npm:7.1.1"
     "@nestjs/terminus": "npm:10.2.0"
     "@nestjs/testing": "npm:10.0.5"
@@ -39920,9 +39969,9 @@ __metadata:
     rxjs: "npm:7.8.1"
     sanitize-html: "npm:2.10.0"
     sequelize: "npm:6.37.3"
-    sequelize-cli: "npm:6.4.1"
+    sequelize-cli: "npm:6.6.2"
     sequelize-replace-enum-postgres: "npm:1.6.0"
-    sequelize-typescript: "npm:2.1.3"
+    sequelize-typescript: "npm:2.1.6"
     short-unique-id: "npm:5.0.3"
     shorthash: "npm:0.0.2"
     slate: "npm:0.70.0"
@@ -41201,19 +41250,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-beautify@npm:^1.14.0":
-  version: 1.14.3
-  resolution: "js-beautify@npm:1.14.3"
+"js-beautify@npm:^1.14.5":
+  version: 1.15.4
+  resolution: "js-beautify@npm:1.15.4"
   dependencies:
     config-chain: "npm:^1.1.13"
-    editorconfig: "npm:^0.15.3"
-    glob: "npm:^7.1.3"
-    nopt: "npm:^5.0.0"
+    editorconfig: "npm:^1.0.4"
+    glob: "npm:^10.4.2"
+    js-cookie: "npm:^3.0.5"
+    nopt: "npm:^7.2.1"
   bin:
     css-beautify: js/bin/css-beautify.js
     html-beautify: js/bin/html-beautify.js
     js-beautify: js/bin/js-beautify.js
-  checksum: 10/849f30dd26264d9e888e29c24b487ee010ec94837f887e21fde728859928da6cdf271a0fd8ca5d7107d8b2c93a32f7b721577f03cdd476e6d1c8ea57d00de393
+  checksum: 10/89f874f994a409868c74d23bdf3869281a25804dd4f77c4eac170cdee671dfb3248370c3b686ea03bb9a7cc7141769c4f450ad85e9158fbed3d7d78c330ae9a1
   languageName: node
   linkType: hard
 
@@ -41221,6 +41271,13 @@ __metadata:
   version: 2.2.1
   resolution: "js-cookie@npm:2.2.1"
   checksum: 10/4387f5f5691cb96ca9ff8852c589d3012b53f484fda68630a39e20cabc6c5b740f09225e23233ba56cd9de6ebe300a23d20b2c7315f10c309ad5a89fd8c4990b
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 10/366494b1630b9fb8abaef3659748db5dfd52c58c6fc3459b9f0a03b492593bc1b01c6dfcc066b46f6413c28edb3a00cc68fb61ea8cdf6991bedf1f100f8a389d
   languageName: node
   linkType: hard
 
@@ -43090,16 +43147,6 @@ __metadata:
   version: 10.2.2
   resolution: "lru-cache@npm:10.2.2"
   checksum: 10/ff1a496d30b5eaec2c9079080965bb0cede203cf878371f7033a007f1e54cd4aa13cc8abf7ccec4c994a83a22ed5476e83a55bb57cc07e6c1547a42937e42c37
-  languageName: node
-  linkType: hard
-
-"lru-cache@npm:^4.1.5":
-  version: 4.1.5
-  resolution: "lru-cache@npm:4.1.5"
-  dependencies:
-    pseudomap: "npm:^1.0.2"
-    yallist: "npm:^2.1.2"
-  checksum: 10/9ec7d73f11a32cba0e80b7a58fdf29970814c0c795acaee1a6451ddfd609bae6ef9df0837f5bbeabb571ecd49c1e2d79e10e9b4ed422cfba17a0cb6145b018a9
   languageName: node
   linkType: hard
 
@@ -45312,6 +45359,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimatch@npm:9.0.1":
+  version: 9.0.1
+  resolution: "minimatch@npm:9.0.1"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: 10/b4e98f4dc740dcf33999a99af23ae6e5e1c47632f296dc95cb649a282150f92378d41434bf64af4ea2e5975255a757d031c3bf014bad9214544ac57d97f3ba63
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:9.0.3, minimatch@npm:^9.0.1":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
@@ -46572,6 +46628,17 @@ __metadata:
   bin:
     nopt: bin/nopt.js
   checksum: 10/00f9bb2d16449469ba8ffcf9b8f0eae6bae285ec74b135fec533e5883563d2400c0cd70902d0a7759e47ac031ccf206ace4e86556da08ed3f1c66dda206e9ccd
+  languageName: node
+  linkType: hard
+
+"nopt@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "nopt@npm:7.2.1"
+  dependencies:
+    abbrev: "npm:^2.0.0"
+  bin:
+    nopt: bin/nopt.js
+  checksum: 10/95a1f6dec8a81cd18cdc2fed93e6f0b4e02cf6bdb4501c848752c6e34f9883d9942f036a5e3b21a699047d8a448562d891e67492df68ec9c373e6198133337ae
   languageName: node
   linkType: hard
 
@@ -49625,7 +49692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pseudomap@npm:^1.0.1, pseudomap@npm:^1.0.2":
+"pseudomap@npm:^1.0.1":
   version: 1.0.2
   resolution: "pseudomap@npm:1.0.2"
   checksum: 10/856c0aae0ff2ad60881168334448e898ad7a0e45fe7386d114b150084254c01e200c957cf378378025df4e052c7890c5bd933939b0e0d2ecfcc1dc2f0b2991f5
@@ -53341,21 +53408,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sequelize-cli@npm:6.4.1":
-  version: 6.4.1
-  resolution: "sequelize-cli@npm:6.4.1"
+"sequelize-cli@npm:6.6.2":
+  version: 6.6.2
+  resolution: "sequelize-cli@npm:6.6.2"
   dependencies:
-    cli-color: "npm:^2.0.1"
+    cli-color: "npm:^2.0.3"
     fs-extra: "npm:^9.1.0"
-    js-beautify: "npm:^1.14.0"
+    js-beautify: "npm:^1.14.5"
     lodash: "npm:^4.17.21"
-    resolve: "npm:^1.20.0"
+    resolve: "npm:^1.22.1"
     umzug: "npm:^2.3.0"
     yargs: "npm:^16.2.0"
   bin:
     sequelize: lib/sequelize
     sequelize-cli: lib/sequelize
-  checksum: 10/cec3c9ae8c40723e25ee97c2131382cac74fe9d25180eea3d30b98e8bf601da23750554c29ec0a5738d6d1366d40dbe0422982e650f9a67e1b06c78df64403c8
+  checksum: 10/eb74375de921fb41be7d6ad707084c58f33651202c2bde80465ecb1761d7cc662b2b4ac5100629d467328c738695bd071f58feda0e352f3afac10ad2a14747ba
   languageName: node
   linkType: hard
 
@@ -53373,17 +53440,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sequelize-typescript@npm:2.1.3":
-  version: 2.1.3
-  resolution: "sequelize-typescript@npm:2.1.3"
+"sequelize-typescript@npm:2.1.6":
+  version: 2.1.6
+  resolution: "sequelize-typescript@npm:2.1.6"
   dependencies:
     glob: "npm:7.2.0"
   peerDependencies:
     "@types/node": "*"
     "@types/validator": "*"
     reflect-metadata: "*"
-    sequelize: ">=6.8.0"
-  checksum: 10/7a76d5f8aceffe15f97cdbd96f6a323be09ce433ed03de4878078844b684ee0df2a22b76b19ee01792de8a5f22a1cd4cba1a07f0ccb24df864aab9fe903fe2f2
+    sequelize: ">=6.20.1"
+  checksum: 10/ec85d6262b6bc742e0945b18712b4808dae26477f6e8ba27cc5f71ab277d71e52a80489892391aaac6f541dc112aca0f725494e6064fce006886868db16166d9
   languageName: node
   linkType: hard
 
@@ -53785,13 +53852,6 @@ __metadata:
     get-intrinsic: "npm:^1.2.4"
     object-inspect: "npm:^1.13.1"
   checksum: 10/eb10944f38cebad8ad643dd02657592fa41273ce15b8bfa928d3291aff2d30c20ff777cfe908f76ccc4551ace2d1245822fdc576657cce40e9066c638ca8fa4d
-  languageName: node
-  linkType: hard
-
-"sigmund@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "sigmund@npm:1.0.1"
-  checksum: 10/5c199a9f7b24483bec8289dcaf72a0280382fc6ece47a19ddb3c8599b2f9126d4e113710a69fba2c70e22a7f2eadcd8adefb142700164ef19699f4ea1c02cbaa
   languageName: node
   linkType: hard
 
@@ -57070,6 +57130,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type@npm:^2.7.2":
+  version: 2.7.3
+  resolution: "type@npm:2.7.3"
+  checksum: 10/82e99e7795b3de3ecfe685680685e79a77aea515fad9f60b7c55fbf6d43a5c360b1e6e9443354ec8906b38cdf5325829c69f094cb7cd2a1238e85bef9026dc04
+  languageName: node
+  linkType: hard
+
 "typed-array-buffer@npm:^1.0.2":
   version: 1.0.2
   resolution: "typed-array-buffer@npm:1.0.2"
@@ -58175,15 +58242,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:9.0.0, uuid@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "uuid@npm:9.0.0"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 10/23857699a616d1b48224bc2b8440eae6e57d25463c3a0200e514ba8279dfa3bde7e92ea056122237839cfa32045e57d8f8f4a30e581d720fd72935572853ae2e
-  languageName: node
-  linkType: hard
-
 "uuid@npm:^3.3.2":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
@@ -58199,6 +58257,15 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 10/b2a4d30ecd6581015175487426558aafd7f7b4013a2e30802c128cc28cad9abe46ecd36c02f7fbcde7908fd4672334818d56a441c0871963d6bd89d911bef2ea
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 10/23857699a616d1b48224bc2b8440eae6e57d25463c3a0200e514ba8279dfa3bde7e92ea056122237839cfa32045e57d8f8f4a30e581d720fd72935572853ae2e
   languageName: node
   linkType: hard
 
@@ -59544,7 +59611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yallist@npm:^2.0.0, yallist@npm:^2.1.2":
+"yallist@npm:^2.0.0":
   version: 2.1.2
   resolution: "yallist@npm:2.1.2"
   checksum: 10/75fc7bee4821f52d1c6e6021b91b3e079276f1a9ce0ad58da3c76b79a7e47d6f276d35e206a96ac16c1cf48daee38a8bb3af0b1522a3d11c8ffe18f898828832

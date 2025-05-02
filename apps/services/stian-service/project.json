@@ -1,0 +1,83 @@
+{
+  "name": "stian-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/services/stian-service/src",
+  "projectType": "application",  
+  "tags": ["scope:nest"],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/services/stian-service",
+        "main": "apps/services/stian-service/src/main.ts",
+        "tsConfig": "apps/services/stian-service/tsconfig.app.json",
+        "assets": [
+          "apps/services/stian-service/src/assets",
+          {
+            "glob": "*",
+            "input": "apps/services/stian-service/migrations",
+            "output": "./migrations"
+          },
+          {
+            "glob": ".sequelizerc",
+            "input": "apps/reference-backend",
+            "output": "./"
+          },
+          {
+            "glob": "sequelize.config.js",
+            "input": "apps/reference-backend",
+            "output": "./"
+          }
+      ],
+        "webpackConfig": "apps/services/stian-service/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "stian-service:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "stian-service:build:development"
+        },
+        "production": {
+          "buildTarget": "stian-service:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/services/stian-service/jest.config.ts"
+      }
+    },
+    "migrate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "../../node_modules/.bin/sequelize-cli db:migrate",
+        "cwd": "apps/services/stian-service"
+      }
+    },
+    "migrate/generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "../../node_modules/.bin/sequelize-cli migration:generate --name $(whoami)",
+        "cwd": "apps/services/stian-service"
+      }
+    }
+  }
+}
